@@ -37,7 +37,7 @@ public class GzipStream {
 
 	deinit {
 		compression_stream_destroy(self.compressionStream)
-		self.compressionStream.deallocate(capacity: 1)
+		self.compressionStream.deallocate()
 	}
 
 	private var potentialFooterData: Data?
@@ -101,7 +101,7 @@ public class GzipStream {
 				self.uncompressedDataSize += destinationBytesCount
 			} while status == COMPRESSION_STATUS_OK && endOfFile
 
-			destinationBuffer.deallocate(capacity: destinationBufferSize)
+			destinationBuffer.deallocate()
 
 			return uncompressedData
 		}
