@@ -1,0 +1,33 @@
+PODS:
+  - Capacitor (5.0.4):
+    - CapacitorCordova
+  - CapacitorCordova (5.0.4)
+  - SNDocx (0.1.1):
+    - Zippy (~> 0.2.1)
+  - Zippy (0.2.1)
+
+DEPENDENCIES:
+  - "Capacitor (from `../node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../node_modules/@capacitor/ios`)"
+  - SNDocx
+
+SPEC REPOS:
+  trunk:
+    - SNDocx
+    - Zippy
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../node_modules/@capacitor/ios"
+
+SPEC CHECKSUMS:
+  Capacitor: d3d4463573438b9fa65326d1f3549da6f4c21634
+  CapacitorCordova: b1fe6bf1f36974a8e4a9044b342d22d49c0996d6
+  SNDocx: 3c1c91cfde83a62d8c76c60e7aee72573ae2c621
+  Zippy: f9e88ce43474b27d58dbb88a1cb25a84f9bfeb0d
+
+PODFILE CHECKSUM: 061259f9b9bb5d4a7005f6fd630ec01914733538
+
+COCOAPODS: 1.11.3
