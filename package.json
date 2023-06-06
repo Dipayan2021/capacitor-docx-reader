@@ -1,6 +1,6 @@
 {
   "name": "docx-reader",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "text from docx",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
