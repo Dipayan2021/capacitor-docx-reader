@@ -15,7 +15,7 @@ import SNDocx
     }
     
     private func extractTextFromDocx(docxURL: URL) -> String{
-        var text = SNDocx.shared.getText(fileUrl: docxURL) ?? "Could not convert into text"
+        let text = SNDocx.shared.getText(fileUrl: docxURL) ?? "Could not convert into text"
         return text
     }
 }
