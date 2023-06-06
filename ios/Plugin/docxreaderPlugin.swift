@@ -1,5 +1,6 @@
 import Foundation
 import Capacitor
+
 /**
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
@@ -18,7 +19,7 @@ public class docxreaderPlugin: CAPPlugin {
     @objc func getTextFromDocxFile(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
         call.resolve([
-            "value": implementation.echo(value)
+            "value": implementation.getTextFromDocxFile(value)
         ])
     }
 }
